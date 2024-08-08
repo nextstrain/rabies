@@ -1,0 +1,55 @@
+{
+  "title": "Real-time tracking of rabies full genome virus evolution",
+  "maintainers": [
+    {"name": "Kim Andrews", "url": "https://bedford.io/team/kim-andrews/"},
+    {"name": "the Nextstrain team", "url": "https://nextstrain.org/team"}
+  ],
+  "data_provenance": [
+    {
+      "name": "GenBank",
+      "url": "https://www.ncbi.nlm.nih.gov/genbank/"
+    }
+  ],
+  "build_url": "https://github.com/nextstrain/rabies",
+  "colorings": [
+    {
+      "key": "gt",
+      "title": "Genotype",
+      "type": "categorical"
+    },
+    {
+      "key": "region",
+      "title": "Region",
+      "type": "categorical"
+    },
+    {
+      "key": "country",
+      "title": "Country",
+      "type": "categorical"
+    },
+    {
+      "key": "host",
+      "title": "Host",
+      "type": "categorical"
+    }
+  ],
+  "geo_resolutions": [
+    "country",
+    "region"
+  ],
+  "display_defaults": {
+    "map_triplicate": true,
+    "color_by": "region"
+  },
+  "filters": [
+    "region",
+    "country",
+    "author"
+  ],
+  "metadata_columns": [
+    "author",
+    "strain",
+    "division",
+    "location"
+  ]
+}

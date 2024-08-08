@@ -1,5 +1,14 @@
-# This configuration file should contain all required configuration parameters
-# for the phylogenetic workflow to run to completion.
-#
-# Define optional config parameters with their default values here so that users
-# do not have to dig through the workflows to figure out the default values
+strain_id_field: "accession"
+files:
+    exclude: "defaults/dropped_strains.txt"
+    reference: "defaults/rabies_reference.gb"
+    colors: "defaults/colors.tsv"
+    auspice_config: "defaults/auspice_config.json"
+    description: "defaults/description.md"
+filter:
+    group_by: "country year"
+    sequences_per_group: 20
+    min_date: 1950
+    min_length: 5000
+ancestral:
+    inference: "joint"

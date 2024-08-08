@@ -1,0 +1,6 @@
+# Incorrect virus species assignment:
+MF197744   # Lyssavirus bokeloh
+MF197745   # Lyssavirus bokeloh
+#
+# Large number of mutations:
+MK920923   # Sample from kinkajou host, Rocha et al. 2020: https://www.tandfonline.com/doi/full/10.1080/22221751.2020.1759380
