@@ -146,6 +146,7 @@ rule join_metadata_and_hostinfo:
     shell:
         """
         unzip -p {input.ncbi_hosttax_info} ncbi_dataset/data/taxonomy_summary.tsv \
+        | tsv-filter -H --not-blank Query \
         | tsv-select -H -f {params.ncbi_hosttax_columns} \
         | tsv-join -H \
         --filter-file - \
